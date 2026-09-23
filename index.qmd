@@ -4,7 +4,7 @@ image: images/headshot.jpg
 toc: false
 about:
     template: jolla
-    image-shape: round
+    image-shape: rounded
     image-width: 17em
     links:
         - text: LinkedIn

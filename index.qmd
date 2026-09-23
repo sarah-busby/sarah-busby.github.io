@@ -1,5 +1,19 @@
 ---
 title: "sarah-busby.github.io"
+image: images/headshot.jpg
+toc: false
+about:
+    template: jolla
+    image-shape: round
+    image-width: 17em
+    links:
+        - text: LinkedIn
+          href: https://www.linkedin.com/in/sarah-busby-9a42a4187/
+          target: _blank
+        - text: Email
+          href: mailto:sabusby18gmail.com
+        - text: GitHub
+          href: https://github.com/sarah-busby
 ---
 
 This is a Quarto website.

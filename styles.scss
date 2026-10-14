@@ -6,7 +6,7 @@ $sage:#a9b492;
 $tan:#d8cab0;
 $cream:#f7efe2;
 $lavender:#9F9FAD;
-$wine:#564154;
+$eggplant:#564154;
 
 // Import Google fonts
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -14,9 +14,9 @@ $wine:#564154;
 // Assign to Quarto Sass variables
 $navbar-bg: $sage;        // navbar background
 $navbar-fg: $cream;   // navbar text/icons
-$navbar-hl: $wine;       // navbar hover highlight
+$navbar-hl: $eggplant;       // navbar hover highlight
 $body-bg: $cream;    // page background
-$body-color: $wine;        // page text
+$body-color: $eggplant;        // page text
 $footer-bg: $lavender;        // footer background
 $link-color: $olive;      // hyperlinks
 $code-bg: $cream;          // inline code background

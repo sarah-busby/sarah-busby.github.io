@@ -1,10 +1,10 @@
 ---
-title: "sarah-busby.github.io"
+title: "Sarah Busby"
 image: images/headshot.jpg
 toc: false
 about:
     template: jolla
-    image-shape: rounded
+    image-shape: round
     image-width: 17em
     links:
         - text: LinkedIn

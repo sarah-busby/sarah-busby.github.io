@@ -11,13 +11,15 @@ website:
       - about.qmd
       - href: resources.qmd
         text: Resources
+page-footer:
+    background: light
+    left: Copyright 2026, Sarah Busby
+    right: This website is built with {{< fa heart title="a heart" >}}, [{{< fa brands github title="GitHub octocat logo" >}}](https://github.com/sarah-busby/sarah-busby.github.io){target=_blank}, [{{< fa brands r-project title="R Project" >}}](https://www.r-project.org/about.html){target=_blank} and [Quarto](https://quarto.org/){target=_blank}
 
 format:
   html:
-    theme:
-      light: minty
-      dark: solar
-    css: styles.css
+    theme: styles.scss
+    mainfont: Atkinson Hyperlegible
     toc: true
     page-layout: full
 

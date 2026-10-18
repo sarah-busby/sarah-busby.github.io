@@ -1,6 +1,6 @@
 ---
 title: "Sarah Busby"
-image: images/headshot.jpg
+image: images/sunset.JPG
 toc: false
 about:
     template: jolla

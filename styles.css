@@ -1,4 +1,7 @@
 /* css styles */
 .about-image {
-    object-position: top !important;
+    object-fit: cover;
+    transform: scale(1.1);
+
+    overflow: hidden;
 }

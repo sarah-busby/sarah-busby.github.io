@@ -1,0 +1,12 @@
+# Re render posts only when source changes
+freeze: auto
+
+# Banner style title blocks
+title-block-banner: true
+
+# Author info applied across all posts
+author:
+    - name: Sarah Busby
+      url: https://sarah-busby.github.io
+      affiliation: Master of Environmental Data Science Program @ The Bren School
+      affiliation-url: https://ucsb-meds.github.io

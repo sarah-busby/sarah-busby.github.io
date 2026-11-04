@@ -1,0 +1,29 @@
+---
+title: "My first blog post! :)"
+description: "Hello world" # A short description that appears on the listing page
+date: 11-04-2026
+categories: [Quarto, R, MEDS, Geospatial]
+bibliography: references.bib
+citation: 
+    url: https://sarah-busby.github.io/posts/2026-11-04-my-first-blog/
+image: ../images/sunset.JPG
+draft: false # true would mean it keeps file but doesn't render it
+---
+
+Here is where your blog post content begins...
+
+```{r}
+print("Hello world! :)")
+```
+
+### Method 1 to add footnote
+
+I am going to insert a footnote here [^1].
+
+[^1]: Here is the associated footnote text
+
+### Method 2 - Inline
+I am going to insert an inline footnote here^[Here is my inline footnote].
+
+
+This was explored in previous work [@csik2021].

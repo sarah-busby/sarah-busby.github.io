@@ -1,0 +1,8 @@
+---
+title: "My Blog"
+listing: 
+    contents: posts # Must match your folder name for your blog posts
+    type: default # Options: default, grid, or table
+    sort: "date desc" # Newer posts first
+    categories: true # Enables category filtering
+---

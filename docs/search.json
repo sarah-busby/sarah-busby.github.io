@@ -12,5 +12,26 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "My Blog",
+    "section": "",
+    "text": "My first blog post! :)\n\n\n\nQuarto\n\nR\n\nMEDS\n\nGeospatial\n\n\n\nHello world\n\n\n\n\n\nNov 4, 2026\n\n\nSarah Busby\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2026-11-04-my-first-blog/index.html",
+    "href": "posts/2026-11-04-my-first-blog/index.html",
+    "title": "My first blog post! :)",
+    "section": "",
+    "text": "Here is where your blog post content begins…\nprint(\"Hello world! :)\")\n\n[1] \"Hello world! :)\""
+  },
+  {
+    "objectID": "posts/2026-11-04-my-first-blog/index.html#footnotes",
+    "href": "posts/2026-11-04-my-first-blog/index.html#footnotes",
+    "title": "My first blog post! :)",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nHere is the associated footnote text↩︎\nHere is my inline footnote↩︎"
   }
 ]

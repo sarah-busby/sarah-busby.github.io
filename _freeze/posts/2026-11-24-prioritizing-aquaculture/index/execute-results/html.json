@@ -1,0 +1,15 @@
+{
+  "hash": "c60974444b96cf89b3c44ee99cf3cb7f",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Prioritizing Potential Aquaculture\"\ndescription: \"Identifying Suitable Zones for Aquaculture Species\" \ndate: 11-24-2026\ncategories: [Quarto, R, MEDS, Geospatial]\nbibliography: references.bib\ncitation: \n    url: https://sarah-busby.github.io/posts/2026-11-24-prioritizing-aquaculture\nimage: ../images/sunset.JPG\ndraft: true # true would mean it keeps file but doesn't render it\n---\n\n## \n\n## Background\nThis was explored in previous work [@gentry2017mapping].\n\n\n::: {.cell}\n\n```{.r .cell-code}\nprint(\"Hello world! :)\")\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] \"Hello world! :)\"\n```\n\n\n:::\n:::\n\n\n### Method 1 to add footnote\n\nI am going to insert a footnote here [^1].\n\n[^1]: Here is the associated footnote text\n\n### Method 2 - Inline\nI am going to insert an inline footnote here^[Here is my inline footnote].\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

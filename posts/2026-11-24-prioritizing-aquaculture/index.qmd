@@ -1,0 +1,70 @@
+---
+title: "Prioritizing Potential Aquaculture"
+description: "Identifying Suitable Zones for Aquaculture Species" 
+date: 11-24-2026
+categories: [Quarto, R, MEDS, Geospatial]
+bibliography: references.bib
+citation: 
+    url: https://sarah-busby.github.io/posts/2026-11-24-prioritizing-aquaculture
+image: ../images/sunset.JPG
+draft: true # true would mean it keeps file but doesn't render it
+---
+
+## Background
+Marine aquaculture may prove a more sustainable protein source than land-based meat production [@gentry2017mapping].
+
+## Research Question
+This analysis aims to determine priority zones for potential aquaculture species along the West Coast based on suitable area for those species. This analysis will map priority zones for oyster and red abalone species. However, the function created can assess zones for many marine species given a species' suitable range of sea surface temperature and ocean depth.
+
+## Preparing Data
+
+### Load packages
+```{r}
+#| output: false
+# Load libraries
+library(terra)
+library(tidyverse)
+library(tmap)
+library(sf)
+library(here)
+```
+
+### Import data
+Import shapefile of the EEZ boundaries, depth, and SST data from 2008-2012. 
+
+```{r}
+#| output: false
+#| code-fold: true
+# Read in West Coast EEZ shapefile
+eez <- st_read(here::here("posts/2026-11-24-prioritizing-aquaculture/data/wc_regions_clean.shp"))
+
+# Read in bathymetry data
+depth <- rast(here::here("posts/2026-11-24-prioritizing-aquaculture/data/depth.tif"))
+
+# Add SST data from 2008-2012
+sst_08 <- rast(here::here("posts/2026-11-24-prioritizing-aquaculture/data/average_annual_sst_2008.tif"))
+sst_09 <- rast(here::here("posts/2026-11-24-prioritizing-aquaculture/data/average_annual_sst_2009.tif"))
+sst_10 <- rast(here::here("posts/2026-11-24-prioritizing-aquaculture/data/average_annual_sst_2010.tif"))
+sst_11 <- rast(here::here("posts/2026-11-24-prioritizing-aquaculture/data/average_annual_sst_2011.tif"))
+sst_12 <- rast(here::here("posts/2026-11-24-prioritizing-aquaculture/data/average_annual_sst_2012.tif"))
+
+# Combine rasters to one stack
+sst_stack <- c(sst_08, sst_09, sst_10, sst_11, sst_12)
+
+# Check if CRSs match
+if(!same.crs(eez, depth)){
+  warning("Coordinate refrence systems do not match. CRS transformed to match EEZ")
+  depth <- project(depth, "EPSG:4326")
+}
+
+if(!same.crs(eez, sst_stack)){
+  warning("Coordinate refrence systems do not match. CRS transformed to match EEZ")
+  sst_stack <- project(sst_stack, "EPSG:4326")
+}
+```
+
+### Process data
+Sea surface temperature across 2008-2012 will be averaged to find the mean SST for that area. This average will be compared against the species' suitable SST range. Since the SST data is recorded in Kelvin, it will also be converted to Celcius.
+
+
+

@@ -18,6 +18,34 @@
     "href": "posts.html",
     "title": "My Blog",
     "section": "",
-    "text": "Prioritizing Potential Aquaculture\n\n\n\nQuarto\n\nR\n\nMEDS\n\nGeospatial\n\n\n\nIdentifying Suitable Zones for Aquaculture Species\n\n\n\n\n\nNov 24, 2026\n\n\nSarah Busby\n\n\n\n\n\n\n\n\n\n\n\n\nMy first blog post! :)\n\n\n\nQuarto\n\nR\n\nMEDS\n\nGeospatial\n\n\n\nHello world\n\n\n\n\n\nNov 4, 2026\n\n\nSarah Busby\n\n\n\n\n\nNo matching items"
+    "text": "Prioritizing Potential Aquaculture\n\n\n\nQuarto\n\nR\n\nMEDS\n\nGeospatial\n\n\n\nIdentifying Suitable Zones for Aquaculture Species\n\n\n\n\n\nNov 24, 2026\n\n\nSarah Busby\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2026-11-24-prioritizing-aquaculture/index.html",
+    "href": "posts/2026-11-24-prioritizing-aquaculture/index.html",
+    "title": "Prioritizing Potential Aquaculture",
+    "section": "",
+    "text": "Marine aquaculture may prove a more sustainable protein source than land-based meat production (Gentry et al. 2017)."
+  },
+  {
+    "objectID": "posts/2026-11-24-prioritizing-aquaculture/index.html#background",
+    "href": "posts/2026-11-24-prioritizing-aquaculture/index.html#background",
+    "title": "Prioritizing Potential Aquaculture",
+    "section": "",
+    "text": "Marine aquaculture may prove a more sustainable protein source than land-based meat production (Gentry et al. 2017)."
+  },
+  {
+    "objectID": "posts/2026-11-24-prioritizing-aquaculture/index.html#research-question",
+    "href": "posts/2026-11-24-prioritizing-aquaculture/index.html#research-question",
+    "title": "Prioritizing Potential Aquaculture",
+    "section": "Research Question",
+    "text": "Research Question\nThis analysis aims to determine priority zones for potential aquaculture species along the West Coast based on suitable area for those species. This analysis will map priority zones for oyster and red abalone species. However, the function created can assess zones for many marine species given a species’ suitable range of sea surface temperature and ocean depth."
+  },
+  {
+    "objectID": "posts/2026-11-24-prioritizing-aquaculture/index.html#preparing-data",
+    "href": "posts/2026-11-24-prioritizing-aquaculture/index.html#preparing-data",
+    "title": "Prioritizing Potential Aquaculture",
+    "section": "Preparing Data",
+    "text": "Preparing Data\n\nLoad packages\n\n# Load libraries\nlibrary(terra)\nlibrary(tidyverse)\nlibrary(tmap)\nlibrary(sf)\nlibrary(here)\n\n\n\nImport data\nImport shapefile of the EEZ boundaries, depth, and SST data from 2008-2012.\n\n\nCode\n# Read in West Coast EEZ shapefile\neez &lt;- st_read(here::here(\"posts/2026-11-24-prioritizing-aquaculture/data/wc_regions_clean.shp\"))\n\n# Read in bathymetry data\ndepth &lt;- rast(here::here(\"posts/2026-11-24-prioritizing-aquaculture/data/depth.tif\"))\n\n# Add SST data from 2008-2012\nyears &lt;- 2008:2012\npaths &lt;- here(paste0(\"posts/2026-11-24-prioritizing-aquaculture/data/average_annual_sst_\", years, \".tif\"))\nsst_stack &lt;-rast(paths)\nnames(sst_stack) &lt;- paste0(\"sst_\", years)\n\n# Check if CRSs match\nif(!same.crs(eez, depth)){\n  warning(\"Coordinate refrence systems do not match. CRS transformed to match EEZ\")\n  depth &lt;- project(depth, \"EPSG:4326\")\n}\n\nif(!same.crs(eez, sst_stack)){\n  warning(\"Coordinate refrence systems do not match. CRS transformed to match EEZ\")\n  sst_stack &lt;- project(sst_stack, \"EPSG:4326\")\n}\n\n\n\n\nProcess data\nSea surface temperature across 2008-2012 will be averaged to find the mean SST for that area. This average will be compared against the species’ suitable SST range. Since the SST data is recorded in Kelvin, it will also be converted to Celcius."
   }
 ]

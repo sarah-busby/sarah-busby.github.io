@@ -10,8 +10,7 @@ website:
         text: Home
       - about.qmd
       - posts.qmd
-      - href: resources.qmd
-        text: Resources
+      
   page-footer:
     background: light
     left: Copyright 2026, Sarah Busby

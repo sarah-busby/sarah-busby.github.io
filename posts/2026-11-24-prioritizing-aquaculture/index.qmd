@@ -62,5 +62,3 @@ if(!same.crs(eez, sst_stack)){
 ### Process data
 Sea surface temperature across 2008-2012 will be averaged to find the mean SST for that area. This average will be compared against the species' suitable SST range. Since the SST data is recorded in Kelvin, it will also be converted to Celcius.
 
-
-

@@ -2,4 +2,10 @@
 title: "About"
 ---
 
-About this site
+# About Sarah
+
+Sarah Busby earned her Bachelor of Science in Biology with a concentration in Ecology, Evolution, and Genomics from Drexel University in 2023. Her interdisciplinary interests led her to additional minors in Bioinformatics and Science, Technology & Society (STS). 
+ 
+During her undergraduate career, Sarah's work focused on watershed ecology and water quality monitoring in freshwater systems. At the Patrick Center for Environmental Research of Drexel's Academy of Natural Sciences, she specialized in collecting and processing benthic macroinvertebrate samples and contributed to biomonitoring projects across the Delaware River headwaters. Following this experience, she was hired by a local NGO, Willistown Conservation Trust, to continue similar work at a more localized scale. Tasked with researching software for macroinvertebrate analyses, it was this role that peaked her interest in data science application in the environmental field.
+
+Pursuing a parallel interest in public outreach, she most recently worked as an environmental educator within the greater Philadelphia Area at Briar Bush Nature Center. While teaching environmental topics across diverse audiences, she saw firsthand the impact of effective science communication. Through the MEDS program, Sarah is interested in seeking the intersection of data science and science communication within the environmental field, as she believes data science is a powerful tool for translating environmental problems and solutions to a broader audience.

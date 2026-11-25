@@ -16,6 +16,4 @@ about:
           href: https://github.com/sarah-busby
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Hello! My name is Sarah Busby and I'm currently pursuing a Master's in Environmental Data Science at the Bren School at UC Santa Barbara. You can find out more about me and the projects I'm working on here.

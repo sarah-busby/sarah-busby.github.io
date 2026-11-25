@@ -4,34 +4,20 @@
     "href": "index.html",
     "title": "Sarah Busby",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Hello! My name is Sarah Busby and I’m currently pursuing a Master’s in Environmental Data Science at the Bren School at UC Santa Barbara. You can find out more about me and the projects I’m working on here."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "About Sarah\nSarah Busby earned her Bachelor of Science in Biology with a concentration in Ecology, Evolution, and Genomics from Drexel University in 2023. Her interdisciplinary interests led her to additional minors in Bioinformatics and Science, Technology & Society (STS).\nDuring her undergraduate career, Sarah’s work focused on watershed ecology and water quality monitoring in freshwater systems. At the Patrick Center for Environmental Research of Drexel’s Academy of Natural Sciences, she specialized in collecting and processing benthic macroinvertebrate samples and contributed to biomonitoring projects across the Delaware River headwaters. Following this experience, she was hired by a local NGO, Willistown Conservation Trust, to continue similar work at a more localized scale. Tasked with researching software for macroinvertebrate analyses, it was this role that peaked her interest in data science application in the environmental field.\nPursuing a parallel interest in public outreach, she most recently worked as an environmental educator within the greater Philadelphia Area at Briar Bush Nature Center. While teaching environmental topics across diverse audiences, she saw firsthand the impact of effective science communication. Through the MEDS program, Sarah is interested in seeking the intersection of data science and science communication within the environmental field, as she believes data science is a powerful tool for translating environmental problems and solutions to a broader audience."
   },
   {
     "objectID": "posts.html",
     "href": "posts.html",
     "title": "My Blog",
     "section": "",
-    "text": "My first blog post! :)\n\n\n\nQuarto\n\nR\n\nMEDS\n\nGeospatial\n\n\n\nHello world\n\n\n\n\n\nNov 4, 2026\n\n\nSarah Busby\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/2026-11-04-my-first-blog/index.html",
-    "href": "posts/2026-11-04-my-first-blog/index.html",
-    "title": "My first blog post! :)",
-    "section": "",
-    "text": "Here is where your blog post content begins…\nprint(\"Hello world! :)\")\n\n[1] \"Hello world! :)\""
-  },
-  {
-    "objectID": "posts/2026-11-04-my-first-blog/index.html#footnotes",
-    "href": "posts/2026-11-04-my-first-blog/index.html#footnotes",
-    "title": "My first blog post! :)",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nHere is the associated footnote text↩︎\nHere is my inline footnote↩︎"
+    "text": "No matching items"
   }
 ]

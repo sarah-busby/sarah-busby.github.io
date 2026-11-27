@@ -21,6 +21,7 @@ This analysis aims to determine priority zones for potential aquaculture species
 ### Load packages
 ```{r}
 #| output: false
+#| code-fold: true
 # Load libraries
 library(terra)
 library(tidyverse)

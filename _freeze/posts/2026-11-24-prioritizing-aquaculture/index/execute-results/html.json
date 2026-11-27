@@ -1,9 +1,11 @@
 {
-  "hash": "0b259199a3e6fbc55c0d0775661debe3",
+  "hash": "e00e143e9c00857f10911fce0dc3ff81",
   "result": {
     "engine": "knitr",
     "markdown": "---\ntitle: \"Prioritizing Potential Aquaculture\"\ndescription: \"Identifying Suitable Zones for Aquaculture Species\" \ndate: 11-24-2026\ncategories: [Quarto, R, MEDS, Geospatial]\nbibliography: references.bib\ncitation: \n    url: https://sarah-busby.github.io/posts/2026-11-24-prioritizing-aquaculture\nimage: ../images/sunset.JPG\ndraft: false # true would mean it keeps file but doesn't render it\n---\n\n## Background\nMarine aquaculture may prove a more sustainable protein source than land-based meat production [@gentry2017mapping].\n\n## Research Question\nThis analysis aims to determine priority zones for potential aquaculture species along the West Coast based on suitable area for those species. This analysis will map priority zones for oyster and red abalone species. However, the function created can assess zones for many marine species given a species' suitable range of sea surface temperature and ocean depth.\n\n## Preparing Data\n\n### Load packages\n\n::: {.cell}\n\n```{.r .cell-code}\n# Load libraries\nlibrary(terra)\nlibrary(tidyverse)\nlibrary(tmap)\nlibrary(sf)\nlibrary(here)\n```\n:::\n\n\n### Import data\nImport shapefile of the EEZ boundaries, depth, and SST data from 2008-2012. \n\n\n::: {.cell}\n\n```{.r .cell-code  code-fold=\"true\"}\n# Read in West Coast EEZ shapefile\neez <- st_read(here::here(\"posts/2026-11-24-prioritizing-aquaculture/data/wc_regions_clean.shp\"))\n\n# Read in bathymetry data\ndepth <- rast(here::here(\"posts/2026-11-24-prioritizing-aquaculture/data/depth.tif\"))\n\n# Add SST data from 2008-2012\nyears <- 2008:2012\npaths <- here(paste0(\"posts/2026-11-24-prioritizing-aquaculture/data/average_annual_sst_\", years, \".tif\"))\nsst_stack <-rast(paths)\nnames(sst_stack) <- paste0(\"sst_\", years)\n\n# Check if CRSs match\nif(!same.crs(eez, depth)){\n  warning(\"Coordinate refrence systems do not match. CRS transformed to match EEZ\")\n  depth <- project(depth, \"EPSG:4326\")\n}\n\nif(!same.crs(eez, sst_stack)){\n  warning(\"Coordinate refrence systems do not match. CRS transformed to match EEZ\")\n  sst_stack <- project(sst_stack, \"EPSG:4326\")\n}\n```\n:::\n\n\n### Process data\nSea surface temperature across 2008-2012 will be averaged to find the mean SST for that area. This average will be compared against the species' suitable SST range. Since the SST data is recorded in Kelvin, it will also be converted to Celcius.\n\n",
-    "supporting": [],
+    "supporting": [
+      "index_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],
